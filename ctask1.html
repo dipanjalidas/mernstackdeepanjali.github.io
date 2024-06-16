@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Task-1 deepanjali css 21bec0075</title>
+        <style>
+            .table-container {
+                width: 720px; 
+                background-color: black;
+                padding: 10px;
+                border-radius: 20px;
+                box-shadow: 0 0 1px (0, 0, 0, 0.1);
+                margin: auto; /* Center the container */
+                overflow: hidden; /* Ensures rounded corners work properly */
+                margin-bottom: 20px; /* Space between the two tables */
+            }
+
+            table {
+                width: 700px;
+                background-color: green;
+                border-collapse: separate;
+                border-spacing: 0;
+                margin: auto; /* Center the table within the container */
+            }
+
+            th, td {
+                width: 100px;
+                padding: 10px;
+                background-color: aqua;
+                border: 1px solid #ddd;
+                text-align: left;
+                border-radius: 10px;
+            }
+
+            th:first-child, td:first-child {
+                border-top-left-radius: 10px;
+                border-bottom-left-radius: 10px;
+            }
+
+            th:last-child, td:last-child {
+                border-top-right-radius: 10px;
+                border-bottom-right-radius: 10px;
+            }
+
+            .shape-table {
+                width: 700px;
+                border-collapse: separate;
+                border-spacing: 10px;
+                margin: auto; /* Center the table within the body */
+            }
+
+            .shape-table th, .shape-table td {
+                width: 100px;
+                height: 50px;
+                background-color: #f1f1f1;
+                text-align: center;
+                vertical-align: middle;
+                border: 1px solid white;
+            }
+
+            .rectangle {
+                border-radius: 0;
+            }
+
+            .curved-rectangle {
+                border-radius: 15px;
+            }
+
+            .slightly-curved-rectangle {
+                border-radius: 5px;
+            }
+
+            .circle {
+                width: 75x;
+                height: 75px;
+                border-radius: 75%;
+                margin: auto;
+            }
+
+            .more-curved-rectangle {
+                border-radius: 25px 25px 10px 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="table-container">
+            <table>
+                <tr>
+                    <th><b>Firstname</b></th>
+                    <th><b>Lastname</b></th>
+                    <th><b>Age</b></th>
+                </tr>
+                <tr>
+                    <td>Jill</td>
+                    <td>Smith</td>
+                    <td>50</td>
+                </tr>
+                <tr>
+                    <td>Eve</td>
+                    <td>Jackson</td>
+                    <td>94</td>
+                </tr>
+                <tr> 
+                    <td>John</td>
+                    <td>Doe</td>
+                    <td>80</td>
+                </tr>
+            </table>
+        </div>
+        <table class="shape-table">
+            <tr>
+                <td class="rectangle"></td>
+                <td class="rectangle"></td>
+                <td class="curved-rectangle"></td>
+            </tr>
+            <tr>
+                <td class="slightly-curved-rectangle"></td>
+                <td class="rectangle"></td>
+                <td class="curved-rectangle"></td>
+            </tr>
+            <tr>
+                <td><div class="circle"></div></td>
+                <td class="rectangle"></td>
+                <td class="more-curved-rectangle"></td>
+            </tr>
+        </table>
+    </body>
+</html>
+

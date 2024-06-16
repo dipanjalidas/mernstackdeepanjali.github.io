@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Styled Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #dfff80; /* Lemon green background */
+            display: flex;
+        }
+
+        /* Sidebar */
+        .sidenav {
+            width: 200px;
+            height: 100vh;
+            background-color: white;
+            border-right: 2px solid #ccc;
+            padding-top: 20px;
+        }
+
+        .sidenav a {
+            display: block;
+            padding: 10px;
+            color: blue;
+            text-decoration: none;
+            margin: 5px 0;
+            transition: 0.3s;
+        }
+
+        .sidenav a:hover {
+            background-color: #ddd;
+        }
+
+        .sidenav .home {
+            color: pink;
+        }
+
+        /* Main Content */
+        .main-content {
+            flex-grow: 1;
+            padding: 20px;
+        }
+
+        .main-content h1 {
+            color: rgb(208, 86, 88);
+        }
+
+        .main-content p {
+            color: rgb(208, 74, 112);
+        }
+
+        .main-content hr {
+            border: none;
+            border-top: 1px dashed rgb(103, 42, 50);
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="sidenav">
+        <a href="#" class="home">Home Page</a>
+        <a href="#">Musings</a>
+        <a href="#">My Town</a>
+        <a href="#">Links</a>
+    </div>
+
+    <div class="main-content">
+        <h1>My First Styled Page</h1>
+        <p>Welcome to my styled page!</p>
+        <p>It lacks images, but at least it has style and it has links, even if they don't go anywhere..</p>
+        <p>There should be more here, but I don't know what yet.</p>
+        <hr>
+        <p>Made 5 April 2004 by myself</p>
+    </div>
+</body>
+</html>

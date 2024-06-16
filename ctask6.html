@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .login-container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            width: 100%;
+            position: relative;
+        }
+
+        .login-container h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .login-container img {
+            display: block;
+            margin: 0 auto 20px;
+            max-width: 100%;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        .form-actions {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .form-actions input[type="submit"],
+        .form-actions input[type="button"] {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .form-actions input[type="submit"] {
+            background-color: green;
+            color: white;
+        }
+
+        .form-actions input[type="button"] {
+            background-color: red;
+            color: white;
+        }
+
+        .form-actions .remember-me {
+            display: flex;
+            align-items: center;
+        }
+
+        .form-actions .remember-me input {
+            margin-right: 5px;
+        }
+
+        .form-actions .forgot-password {
+            position: absolute;
+            right: 20px;
+            bottom: 20px;
+        }
+
+        .form-actions .forgot-password a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+
+        .form-actions .forgot-password a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h2>Login</h2>
+        <img src="C:\Users\debas\Downloads\WhatsApp Image 2024-06-16 at 20.01.51.jpeg" alt="Animated Girl">
+        <form action="/login" method="post">
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" placeholder="Enter Username" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Enter Password" required>
+            </div>
+            <div class="form-actions">
+                <div class="remember-me">
+                    <input type="checkbox" id="remember" name="remember">
+                    <label for="remember">Remember Me</label>
+                </div>
+                <div>
+                    <input type="submit" value="Login">
+                    <input type="button" value="Cancel">
+                </div>
+                <div class="forgot-password">
+                    <a href="#">Forget Password?</a>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
